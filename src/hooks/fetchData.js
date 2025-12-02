@@ -29,9 +29,8 @@ const useFetchData = () => {
 
     (async () => {
       try {
-        const serverHost = import.meta.env.REACT_APP_API_URL;
         const [{ questions, answers }] = await getAllQuestions(
-          `${serverHost}/api/questions`
+          `https://quiz-app-backend-0k30.onrender.com/api/questions`
         );
 
         if (!questions || questions.length === 0) {

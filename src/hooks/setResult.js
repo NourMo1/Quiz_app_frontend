@@ -23,8 +23,10 @@ const useSetResult = (result) => {
       }
     };
 
-    const serverHost = import.meta.env.REACT_APP_API_URL;
-    addResults(`${serverHost}/api/results`, result);
+    addResults(
+      `https://quiz-app-backend-0k30.onrender.com/api/results`,
+      result
+    );
 
     hasSaved.current = true;
   }, [result]);
