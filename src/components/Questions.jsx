@@ -1,4 +1,4 @@
-import useFetchData from "../hooks/FetchData";
+import useFetchData from "../hooks/fetchData";
 import { useDispatch, useSelector } from "react-redux";
 import { updateResult } from "../redux/resultSlice";
 
