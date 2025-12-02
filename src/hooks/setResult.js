@@ -23,8 +23,7 @@ const useSetResult = (result) => {
       }
     };
 
-    const serverHost =
-      import.meta.env.REACT_APP_API_HOSTNAME;
+    const serverHost = import.meta.env.REACT_APP_API_URL;
     addResults(`${serverHost}/api/results`, result);
 
     hasSaved.current = true;

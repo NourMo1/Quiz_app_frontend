@@ -29,8 +29,7 @@ const useFetchData = () => {
 
     (async () => {
       try {
-        const serverHost =
-          import.meta.env.REACT_APP_API_HOSTNAME;
+        const serverHost = import.meta.env.REACT_APP_API_URL;
         const [{ questions, answers }] = await getAllQuestions(
           `${serverHost}/api/questions`
         );
